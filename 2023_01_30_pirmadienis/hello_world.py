@@ -1,7 +1,7 @@
 print("hello world")
 # BUG kažkur klaida
 a = 2 + 2
-# XXX irgi kažkas negarai
+# XXX irgi kažkas negerai
 b = 5 // 14
 # FIXME ištaisyk mane
 c = 6 ** 8
