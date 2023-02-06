@@ -5,7 +5,7 @@
 input_a = int(input("Please input any integer number: "))
 
 my_dict = {}
-for n_value in range(1, input_a, 1):
+for n_value in range(0, input_a + 1):
     my_dict[n_value] = n_value * n_value
 
 print(my_dict)
