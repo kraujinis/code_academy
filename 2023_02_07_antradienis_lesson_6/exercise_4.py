@@ -19,7 +19,9 @@ if symbol in symbol_list:
         answer= number_1 - number_2
     if symbol == '+':
         answer = number_1 + number_2
-
+else:
+    print(f"Symbol '{symbol}' not alowed !")
+    answer = 0
 
 print(f"You entered {number_1} {symbol} {number_2}. Answer: {answer}")
 
