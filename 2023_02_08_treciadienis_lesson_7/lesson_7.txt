@@ -1,0 +1,10 @@
+Check settings:
+
+git config --list
+git status
+git add <filename>
+git status
+git commit -m
+git push
+
+
