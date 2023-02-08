@@ -5,4 +5,4 @@ import random
 random_number = random.randint(1, 10)
 
 if a in range(0, 10):
-    if 
+
