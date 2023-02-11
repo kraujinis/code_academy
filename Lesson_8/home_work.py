@@ -70,11 +70,7 @@ for letter_x, word_y in zip(unique_letter, list_all_words):
     # print("letter: ", letter_x)
     # print("word: ", word_y)
     for x in letter_x:
-        print("x", x)
-        for y in word_y:
-            print("y", y)
-            print(f"letter : {x} = ", y.count(x))
-            
+        print(f"letter : {x} = ", word_y.count(x))
     print("list")
         
     # for word in list_all_words:
