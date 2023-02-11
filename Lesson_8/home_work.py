@@ -44,11 +44,20 @@ for _ in range(0, 5):   # create first loop of 5 for make 5 words in list
                     for _ in range(0, 5):
                         letter_random = random.sample(letter_list, random.randint(5, 15))
                         letter_list_5.append(''.join(letter_random))
-
+# print(letter_list_1)
+# print(letter_list_2)
+# print(letter_list_3)
+# print(letter_list_4)
+# print(letter_list_5)
 # --> END 1
 
 # START 2 --> then count how many each letters are in those words.
 # Return answer as a dictionary. {'letter': count}
+
+list_all_words = [letter_list_1] + [letter_list_2] + [letter_list_3] + [letter_list_4] + [letter_list_5]
+
+
+print(list_all_words)
 
 
 # --> END 2
