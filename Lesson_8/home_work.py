@@ -55,26 +55,27 @@ for _ in range(0, 5):   # create first loop of 5 for make 5 words in list
 # START 2 --> then count how many each letters are in those words.
 # Return answer as a dictionary. {'letter': count}
 
-list_all_words = [''.join(letter_list_1)] + [''.join(letter_list_2)] + [''.join(letter_list_3)] + [''.join(letter_list_4)] + [''.join(letter_list_5)]
+list_all_words = [''.join(letter_list_1), ''.join(letter_list_2), ''.join(letter_list_3), ''.join(letter_list_4), ''.join(letter_list_5)]
 
-print(list_all_words)
+
 
 for word in list_all_words:
     unique_word = set(word)
     unique_letter.append(list(unique_word))
-    
 
-print(set(list_all_words))
 print("unique  ", unique_letter)
-i: int = 0
-for letter in unique_letter:
-    print("len", len(unique_letter))
-    print("for ", letter)
-    for word, x in unique_letter:
-    
-        print()
-        print(f"letter{str(i)}: {x} = ", word.count(x))
-        
+print(list_all_words)
+
+for letter_x, word_y in zip(unique_letter, list_all_words):
+    # print("letter: ", letter_x)
+    # print("word: ", word_y)
+    for x in letter_x:
+        print("x", x)
+        for y in word_y:
+            print("y", y)
+            print(f"letter : {x} = ", y.count(x))
+            
+    print("list")
         
     # for word in list_all_words:
     #     i += 1
