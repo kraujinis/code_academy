@@ -20,7 +20,7 @@ letter_list_2 = []
 letter_list_3 = []
 letter_list_4 = []
 letter_list_5 = []
-unique_letter = []
+unique_letter = []  # create a list of unique letters from 5 lists
 
 for _ in range(0, 5):   # create first loop of 5 for make 5 words in list
     letter_random = random.sample(letter_list, random.randint(5, 15))   # take random 5 letters from list
@@ -57,8 +57,6 @@ for _ in range(0, 5):   # create first loop of 5 for make 5 words in list
 
 list_all_words = [''.join(letter_list_1), ''.join(letter_list_2), ''.join(letter_list_3), ''.join(letter_list_4), ''.join(letter_list_5)]
 
-
-
 for word in list_all_words:
     unique_word = set(word)
     unique_letter.append(list(unique_word))
@@ -66,16 +64,12 @@ for word in list_all_words:
 print("unique  ", unique_letter)
 print(list_all_words)
 
+# extract unique letters and words from lists
 for letter_x, word_y in zip(unique_letter, list_all_words):
-    # print("letter: ", letter_x)
-    # print("word: ", word_y)
-    for x in letter_x:
+    for x in letter_x:  # take one letter from list
+        # count how many letters are in word_y
         print(f"letter : {x} = ", word_y.count(x))
-    print("list")
-        
-    # for word in list_all_words:
-    #     i += 1
-    #     print(f"letter{str(i)}: {x} = ", word.count(x))
-        
+    print(x)
+    
 
 # --> END 2
