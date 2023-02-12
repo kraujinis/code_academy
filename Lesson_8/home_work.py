@@ -48,24 +48,22 @@ for _ in range(0, 5):   # create first loop of 5 for make 5 words in list
 # START 2 --> then count how many each letters are in those words.
 # Return answer as a dictionary. {'letter': count}
 
-list_all_words_joined = [ 
-                        ''.join(letter_list_1) + ''.join(letter_list_2)
-                        + ''.join(letter_list_3) + ''.join(letter_list_4)
-                        + ''.join(letter_list_5)
-                        ]
+all_words_list_joined = ''.join(letter_list_1) + ''.join(letter_list_2) + ''.join(letter_list_3) + ''.join(letter_list_4) + ''.join(letter_list_5)
 
-# print(" List all words joined: ", list_all_words_joined)
+all_words_list = letter_list_1 + letter_list_2 + letter_list_3 + letter_list_4 + letter_list_5
 
-for letter in list_all_words_joined:    # take from list all unique letters
-    unique_letter_set = set(letter)
+#print(" List all words joined: ", all_words_list_joined)
 
-# print("Unique letter set: ", unique_letter_set)
+unique_letter_set = ''.join(set(all_words_list_joined))
+
+#print("Unique letter set: ", unique_letter_set)
 
 # extract unique letters and count them
 for letter_x in unique_letter_set:
-    unique_letter_dictionary[letter_x] = list_all_words_joined[0].count(letter_x)   # create dictionary 
+    unique_letter_dictionary[letter_x] = all_words_list_joined.count(letter_x)   # create dictionary 
 
 print("Counted letter dictionary: ", unique_letter_dictionary)
-print("Sum of all letters in lists: ", sum(unique_letter_dictionary.values()))
+print("Sum of all letter in lists: ", sum(unique_letter_dictionary.values()))
+print("All words from lists to one list: ", all_words_list)
 
 # --> END 2
