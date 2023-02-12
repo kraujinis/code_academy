@@ -9,18 +9,17 @@ import random
 # START 1 --> create 5 lists with diferent lenght of 5 words
 
 letter_list = [
-                'a', 'b', 'c', 'd', 'e', 'f',
-                'g', 'h', 'i', 'j', 'k', 'l',
-                'm', 'n', 'o', 'p', 'q', 'r'
+                'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i',
+                'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r',
+                's', 't', 'u', 'v', 'w', 'x', 'y', 'z'
                 ]
-
 
 letter_list_1 = []
 letter_list_2 = []
 letter_list_3 = []
 letter_list_4 = []
 letter_list_5 = []
-unique_letter = []  # create a list of unique letters from 5 lists
+unique_letter_dictionary = {}
 
 for _ in range(0, 5):   # create first loop of 5 for make 5 words in list
     letter_random = random.sample(letter_list, random.randint(5, 15))   # take random 5 letters from list
@@ -45,31 +44,28 @@ for _ in range(0, 5):   # create first loop of 5 for make 5 words in list
                     for _ in range(0, 5):
                         letter_random = random.sample(letter_list, random.randint(5, 15))
                         letter_list_5.append(''.join(letter_random))
-# print(letter_list_1)
-# print(letter_list_2)
-# print(letter_list_3)
-# print(letter_list_4)
-# print(letter_list_5)
-# --> END 1
 
 # START 2 --> then count how many each letters are in those words.
 # Return answer as a dictionary. {'letter': count}
 
-list_all_words = [''.join(letter_list_1), ''.join(letter_list_2), ''.join(letter_list_3), ''.join(letter_list_4), ''.join(letter_list_5)]
+list_all_words_joined = [ 
+                        ''.join(letter_list_1) + ''.join(letter_list_2)
+                        + ''.join(letter_list_3) + ''.join(letter_list_4)
+                        + ''.join(letter_list_5)
+                        ]
 
-for word in list_all_words:
-    unique_word = set(word)
-    unique_letter.append(list(unique_word))
+# print(" List all words joined: ", list_all_words_joined)
 
-print("unique  ", unique_letter)
-print(list_all_words)
+for letter in list_all_words_joined:    # take from list all unique letters
+    unique_letter_set = set(letter)
 
-# extract unique letters and words from lists
-for letter_x, word_y in zip(unique_letter, list_all_words):
-    for x in letter_x:  # take one letter from list
-        # count how many letters are in word_y
-        print(f"letter : {x} = ", word_y.count(x))
-    print(x)
-    
+# print("Unique letter set: ", unique_letter_set)
+
+# extract unique letters and count them
+for letter_x in unique_letter_set:
+    unique_letter_dictionary[letter_x] = list_all_words_joined[0].count(letter_x)   # create dictionary 
+
+print("Counted letter dictionary: ", unique_letter_dictionary)
+print("Sum of all letters in lists: ", sum(unique_letter_dictionary.values()))
 
 # --> END 2
