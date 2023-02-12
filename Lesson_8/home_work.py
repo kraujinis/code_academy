@@ -26,7 +26,7 @@ Create 5 lists with diferent lenght of 5 words
     1) Loop for of 5, create 5 lists
         2) Take a random letter ramdomly from 5-15 letter from {letter_list} and join to word
         
-        3) If the length of lists items is 5 make list and go to create next list
+        3) If the length of lists items is 5 make list and go to create next
 '''
 
 for _ in range(0, 5):
