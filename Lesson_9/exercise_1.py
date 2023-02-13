@@ -6,7 +6,8 @@ for name in list_names:
     if len(name) >= 5:
         names.append(name)
 
-print(f'Names_list_1 : {names}')
+print(f'Names_list_one : {names}')
 
 names_list = [name for name in list_names if len(name) >= 5]
-print(f'Names_list_2 : {names_list}')
+
+print(f'Names_list_two : {names_list}')
