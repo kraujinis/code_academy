@@ -1,3 +1,5 @@
+from typing import Union, Optional
+
 
 def math_sum(num_one, num_two):
     sum = num_one + num_two
@@ -8,7 +10,7 @@ def string_upper(str: str) -> str:
     return str.upper()
 
 
-def volume_of_tank(height: int, length: int, witdh: int) -> int:
+def volume_of_tank(height: int, length: int, witdh: int) -> Optional[float]:
     volume = height * length * witdh
     if volume < 100:
         print(f"Volume of tank is {volume} its not full, add more")
@@ -26,5 +28,7 @@ def name_input():
 def reverse_string(string: str) -> str:
     reversed_string = string[::-1]
     print(f"Reversed string is \"{reversed_string}\" original string was \"{string}\"")
+    return reversed_string
+
 
 reverse_string("hello")
