@@ -1,4 +1,4 @@
-from typing import Union, Optional
+from typing import Optional
 
 
 def math_sum(num_one, num_two):
