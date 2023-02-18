@@ -22,7 +22,7 @@ def bigram(list1: List[str], list2: List[str]) -> bool:
 
         Second 'for' loop takes {list1} with words (two letters)
         and checks if they is in {list_double}, if yes add it
-        to list {filtered}. 
+        to list {filtered}.
         If in list {filtered} are amount of item the same of
         lenght of {list1} return True, else return False.
     """
