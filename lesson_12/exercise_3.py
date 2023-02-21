@@ -15,9 +15,9 @@ def calculator(number_one: Union[int, float], number_two: Union[int, float]) -> 
         multiplication = number_one * number_two
         return f"sum_s = {sum}, substraction = {substraction}, division = {division}, multiplication = {multiplication}"
 
-    except (ZeroDivisionError, TypeError, Exception) as e:
+    except (ZeroDivisionError, TypeError, Exception) as e: # Exeption dedame gale kad išgaudytų likusias klaidas.
         return f"Error: {e}"
 
 
-print(calculator(10, 'a'))
+print(calculator(10, 0))
 
