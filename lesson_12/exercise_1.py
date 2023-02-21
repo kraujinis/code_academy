@@ -57,6 +57,6 @@ def print_increament(number_one: Union[int, float], number_two: Union[int, float
 
     except IndexError as e:
         print(f"Error: print_sum() {e}")
-        
 
-print_increament(number_one=1.2, number_two=12, number_three=5)
+
+print_increament(number_one=1.2, number_two=12)
