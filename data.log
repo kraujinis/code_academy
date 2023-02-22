@@ -1,2 +1,8 @@
-22/02/2023 18:44:51 - root - DEBUG - Received numbers: a 6 and b:7
-22/02/2023 18:45:38 - root - DEBUG - Received numbers: a 6 and b:7
+22/02/2023 22:27:27 - 22/02/2023 22:27:27 - root - INFO - Input "take_list" in function : []
+22/02/2023 22:27:27 - 22/02/2023 22:27:27 - root - ERROR - Input "take_list" in function is empty : []
+22/02/2023 22:27:27 - 22/02/2023 22:27:27 - root - INFO - Sorted list of more then one unique value in value entered in function : []
+22/02/2023 22:27:27 - 22/02/2023 22:27:27 - root - INFO - Final output (list of unique values joined with sorted list):  []
+22/02/2023 22:30:35 - 22/02/2023 22:30:35 - root - INFO - Input "take_list" in function : []
+22/02/2023 22:30:35 - 22/02/2023 22:30:35 - root - ERROR - Input "take_list" in function is empty : []
+22/02/2023 22:30:35 - 22/02/2023 22:30:35 - root - INFO - Sorted list of more then one unique value in value entered in function : []
+22/02/2023 22:30:35 - 22/02/2023 22:30:35 - root - INFO - Final output (list of unique values joined with sorted list):  []

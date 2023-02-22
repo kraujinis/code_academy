@@ -9,8 +9,9 @@
             "type": "python",
             "request": "launch",
             "program": "${file}",
-            //"console": "integratedTerminal",
-            "console": "internalConsole",
+            "console": "integratedTerminal",
+            //"console": "internalConsole", // DEBUG console
+            //"console": "externalTerminal",
             "justMyCode": true
         }
     ]
