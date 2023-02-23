@@ -8,3 +8,4 @@ def add_new_numbers(number_one: int, number_two: int) -> int:
 
 add_new_numbers(1, 2)
 
+# testas
