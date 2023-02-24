@@ -3,3 +3,4 @@ print("Hello World")
 # https://stackoverflow.com/questions/105034/how-to
 # git labas vakaras
 # paskutinis taisymas
+# taisyta 2023 02 24
