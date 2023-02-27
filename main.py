@@ -1,6 +1,11 @@
-import numpy as np
-import pandas as pd
+import random_word as Wordnik
 
-print(pd.__version__)
+r = Wordnik()
 
-print(np.sqrt(9))
+
+print(r.get_random_word())
+
+
+
+
+
