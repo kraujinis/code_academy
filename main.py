@@ -1,17 +1,10 @@
-<<<<<<< HEAD
-import random_word as Wordnik
+
+from random_word import Wordnik
 
 r = Wordnik()
 
 
-print(r.get_random_word())
+a = r.get_random_words(hasDictionaryDef="true", includePartOfSpeech="noun,verb", minCorpusCount=1, maxCorpusCount=10, minDictionaryCount=1, maxDictionaryCount=10, minLength=5, maxLength=10, sortBy="alpha", sortOrder="asc", limit=15)
 
-
-
-=======
-
-import numpy as np
-import pandas as pd
->>>>>>> staging
-
+print(a)
 
